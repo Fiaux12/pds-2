@@ -19,7 +19,7 @@ class Caminhao : public Veiculo {
         
         void exibirDados() const override 
         {
-            cout << "Caminhão - ";
+            cout << "Caminhao - ";
             Veiculo::exibirDados();
             cout << "Eixos: " << eixos << "\n";
         }
