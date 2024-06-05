@@ -7,11 +7,11 @@ using std::string;
 class Estagiario: public Funcionario
 {
     private:
-        double bolcaEstagio;
+        double bolsaEstagio;
 
     public:
-        Estagiario(int id, string nome, double bolcaEstagio);
-        double calcularSalarioTotal(int id) override;
+        Estagiario(int id, string nome, double bolsaEstagio);
+        double calcularSalarioTotal() override;
 
 };
 

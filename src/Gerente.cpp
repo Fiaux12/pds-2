@@ -1,10 +1,10 @@
 #include "Gerente.hpp"
 
-Gerente::Gerente(int id, string nome, double salarioBase)
-    :Funcionario(id, nome, salarioBase)
+Gerente::Gerente(int id, string nome, double salarioBase, double bonusAnual)
+    :Funcionario(id, nome, salarioBase), bonusAnual(bonusAnual)
 {}
 
-double Gerente::calcularSalarioTotal(int id)
+double Gerente::calcularSalarioTotal()
 {
-    return this->salarioBase + bonusAnual;
+    return salarioBase + bonusAnual;
 }

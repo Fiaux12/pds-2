@@ -1,10 +1,12 @@
 #include "Estagiario.hpp"
+#include <string>
 
-Estagiario::Estagiario(int id, string nome, double salarioBase)
-    :Funcionario(id, nome, 0), bolcaEstagio(bolcaEstagio)
+
+Estagiario::Estagiario(int id, string nome, double bolsaEstagio)
+    :Funcionario(id, nome, 0), bolsaEstagio(bolsaEstagio)
 {}
 
-double Estagiario::calcularSalarioTotal(int id)
+double Estagiario::calcularSalarioTotal()
 {
-    return this->bolcaEstagio;
+    return bolsaEstagio;
 }

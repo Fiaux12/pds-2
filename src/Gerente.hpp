@@ -10,8 +10,8 @@ class Gerente: public Funcionario
         double bonusAnual;
 
     public:
-        Gerente(int id, string nome, double salarioBase);
-        double calcularSalarioTotal(int id) override;
+        Gerente(int id, string nome, double salarioBase, double bonusAnual);
+        double calcularSalarioTotal() override;
 
 };
 

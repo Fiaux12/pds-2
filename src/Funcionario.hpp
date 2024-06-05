@@ -12,7 +12,7 @@ class Funcionario
 
     public:
         Funcionario(int id, string nome, double salarioBase);
-        virtual double calcularSalarioTotal(int id);
+        virtual double calcularSalarioTotal();
 };
 
 #endif
